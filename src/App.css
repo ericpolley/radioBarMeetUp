@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+body {
+    text-align: center;
+    background-color: rgb(159, 130, 84);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.border {
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+a:hover {
+    color: rgb(228, 223, 200);
 }
 
-.App-link {
-  color: #61dafb;
+.alignItems {
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.navBar, .footer {
+    width: 904px;
+    height: 50px;
+    border: 2px solid black;
 }
+.radioBarInside {
+    width: 250px;
+    border: 3px solid black;
+
+}
+.textBody {
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+}
+.sideBar {
+    width: 400px;
+    height: 500px;
+    border: 2px solid black;
+}
+.spacers {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+@media (min-width:500px) {
+    .flexRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .flexCol {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width:500px) {
+    .flexRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .flexCol {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .textBody {
+        width: 400px;
+        height: 200px;
+        margin-bottom: 5px;
+    }
+
+    .navBar {
+        height: 100%;
+        
+    }
+
+    .footer {
+        width: 400px;
+        height: 100%;
+    }
+   
+    }
+
+
+
